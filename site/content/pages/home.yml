@@ -1,0 +1,112 @@
+meta:
+  title: KUANG CI TAO COMMUNITY
+  description: Temple community home page.
+hero:
+  label: Temple Community Notice Board
+  title: KUANG CI TAO COMMUNITY hello
+  subtitle: A living community of cultivation, service, and learning.
+  intro: >-
+    Our community gathers for cultivation, scripture learning, charitable service, and family-centered programs. Through
+    local centers and shared practice, we support a life of discipline, compassion, and wholesome action.
+  image: assets/img/temple-hero.JPG
+  ctas:
+    - label: Upcoming Events
+      href: events.html
+      style: primary
+    - label: Volunteer
+      href: volunteer.html
+      style: secondary
+    - label: Charity Support
+      href: charity.html
+      style: secondary
+    - label: Book Seva
+      href: books.html
+      style: secondary
+sections:
+  - id: pillars
+    title: Our 3 Pillars
+    label: Community Foundations
+    items:
+      - icon: 🕉️
+        title: Cultivation & Practice
+        text: Regular classes, chanting, meditation, and inner discipline programs for sincere daily cultivation.
+      - icon: 📜
+        title: Education & Propagation
+        text: Sharing Tao/Dharma teachings through study circles, guidance, youth learning, and community outreach.
+      - icon: 🤍
+        title: Charitable Activity
+        text: Compassion-led support for families, relief efforts, and practical community service rooted in care.
+    stats: []
+  - id: highlights
+    title: Community Highlights
+    label: Community Highlights
+    left:
+      title: Lineage & Community
+      text: >-
+        Rooted in a tradition of self-cultivation and compassionate conduct, our community brings together elders,
+        youth, and families for shared practice, study sessions, and community service. We aim to nurture clarity,
+        kindness, and moral discipline in daily life.
+    right:
+      title: Centers & Development
+      text: >-
+        Local centers support weekly classes, scripture discussion, youth learning circles, and seasonal seva
+        activities. As facilities and programs grow, we continue building spaces for quiet practice, guidance,
+        fellowship, and service to the wider community.
+    items: []
+    stats: []
+  - id: impact
+    title: Impact
+    label: Community Service Record
+    stats:
+      - key: bloodUnits
+        value: 100
+        label: Units of blood collected
+      - key: volunteers
+        value: 100
+        label: Volunteers joined
+      - key: books
+        value: 100
+        label: Books distributed
+      - key: families
+        value: 100
+        label: Families supported
+    items: []
+  - id: events
+    title: Upcoming Event Highlight
+    label: Community Seva in Action – Upcoming Event
+    featuredEventId: blood-donation-camp-2026-03-08
+    items: []
+    stats: []
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+about:
+  left:
+    title: Lineage & Community
+    text: >-
+      Rooted in a tradition of self-cultivation and compassionate conduct, our community brings together elders, youth,
+      and families for shared practice, study sessions, and community service. We aim to nurture clarity, kindness, and
+      moral discipline in daily life.
+  right:
+    title: Centers & Development
+    text: >-
+      Local centers support weekly classes, scripture discussion, youth learning circles, and seasonal seva activities.
+      As facilities and programs grow, we continue building spaces for quiet practice, guidance, fellowship, and service
+      to the wider community.
+impact:
+  bloodUnits: 500
+  volunteers: 500
+  books: 500
+  families: 500
+event:
+  title: Community Blood Donation Camp
+  location: Main Community Hall, Hyderabad
+  registerUrl: events.html
+slug: home
+updatedAt: "2026-02-24T18:06:03.751Z"
+title: home
+blocks: []

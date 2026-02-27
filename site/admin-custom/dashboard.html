@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="admin-topbar">
+    <div class="admin-topbar-inner">
+      <div>
+        <p class="admin-kicker">Temple Community Admin</p>
+        <h1>Dashboard</h1>
+      </div>
+      <div class="admin-topbar-actions">
+        <p id="me-pill" class="admin-pill">Loading...</p>
+        <button id="logout-btn" class="admin-btn admin-btn-secondary" type="button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <section class="admin-card">
+      <h2>Collections</h2>
+      <div class="collection-grid">
+        <a class="collection-tile" href="dashboard.html?type=pages">Pages</a>
+        <a class="collection-tile" href="dashboard.html?type=events">Events</a>
+        <a class="collection-tile" href="dashboard.html?type=books">Books</a>
+        <a class="collection-tile" href="dashboard.html?type=reports">Reports</a>
+        <a class="collection-tile" href="editor.html?type=settings">Settings</a>
+      </div>
+    </section>
+
+    <section class="admin-card">
+      <div class="admin-card-head">
+        <h2 id="collection-title">Collection Items</h2>
+      </div>
+      <p id="collection-help" class="admin-muted">Select a collection to view items.</p>
+      <div id="collection-list" class="collection-list"></div>
+      <p id="dashboard-status" class="admin-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

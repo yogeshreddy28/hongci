@@ -1,0 +1,51 @@
+meta:
+  title: Philosophy
+  description: Philosophy of spirituality, charity, knowledge, and selfless service.
+hero:
+  label: Temple Community
+  title: Philosophy
+  subtitle: A short statement of values guiding our spiritual, charitable, and educational service.
+  intro: Reflection rooted in purpose, responsibility, and selfless action.
+  image: ""
+  ctas:
+    - label: Back to Home
+      href: index.html
+      style: secondary
+sections:
+  - id: philosophy
+    title: Philosophy
+    label: Reflection
+    items:
+      - title: Why spirituality is important
+        text: |-
+          Spirituality anchors human life in purpose.
+          Without inner discipline, wealth becomes restless, power becomes destructive, and knowledge becomes arrogant.
+          Spiritual cultivation refines the heart, strengthens character, and aligns action with virtue.
+      - title: Why charity purifies wealth
+        text: |-
+          Wealth that circulates in compassion becomes sacred.
+          Wealth that serves only the self becomes a burden.
+          Charity dissolves attachment, reduces ego, and restores balance between privilege and responsibility.
+      - title: Why distributing knowledge sustains society
+        text: |-
+          Knowledge is light.
+          When it is hoarded, ignorance spreads.
+          When it is shared, generations rise.
+          Education strengthens discernment, preserves wisdom, and builds stable communities rooted in understanding.
+      - title: Why service without expectation is highest form
+        text: |-
+          True service asks for nothing in return.
+          When action is free from recognition, praise, or personal gain, it becomes pure.
+          Selfless action is the highest expression of spiritual maturity.
+    stats: []
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+slug: philosophy
+updatedAt: "2026-02-23T20:27:06.106Z"
+title: philosophy
+blocks: []

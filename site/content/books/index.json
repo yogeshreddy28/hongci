@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "items": [
+    {
+      "id": "Cause-And-Effect",
+      "title": "Cause And Effect",
+      "category": "Bhagavad Gita",
+      "description": "The sutra of action and result",
+      "cover_image": "assets/img/books-distribution.JPG",
+      "available_count": 20,
+      "sponsor_suggested_amount": 51,
+      "href": "books.html#request-book-form"
+    },
+    {
+      "id": "life-guidance-books",
+      "title": "Life Guidance",
+      "category": "Life guidance",
+      "description": "Accessible titles for reflection, steadiness, and wise decision-making.",
+      "cover_image": "",
+      "available_count": 18,
+      "sponsor_suggested_amount": 100,
+      "href": "books.html#request-book-form"
+    },
+    {
+      "id": "upanishads-selections",
+      "title": "Upanishads (Selections)",
+      "category": "Upanishads",
+      "description": "Selected passages introducing contemplative teachings and inner inquiry.",
+      "cover_image": "",
+      "available_count": 12,
+      "sponsor_suggested_amount": 151,
+      "href": "books.html#request-book-form"
+    },
+    {
+      "id": "value-based-literature",
+      "title": "Value-Based Literature",
+      "category": "Value-based",
+      "description": "Practical reading on ethics, discipline, family values, and civic conduct.",
+      "cover_image": "",
+      "available_count": 25,
+      "sponsor_suggested_amount": 75,
+      "href": "books.html#request-book-form"
+    }
+  ],
+  "lastUpdated": "2026-02-24T17:28:33.007Z"
+}

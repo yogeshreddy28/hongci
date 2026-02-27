@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+</head>
+<body>
+  <noscript>This admin panel requires JavaScript.</noscript>
+  <script>
+    window.CMS_MANUAL_INIT = true;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    (async function () {
+      const host = window.location.hostname;
+      const isLocal = host === "localhost" || host === "127.0.0.1";
+      const configUrl = isLocal ? "/admin/config.local.yml" : "/admin/config.yml";
+      const res = await fetch(configUrl, { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load " + configUrl + " (" + res.status + ")");
+      const yamlText = await res.text();
+      const config = window.jsyaml.load(yamlText);
+      window.CMS.init({ config });
+    })().catch((err) => {
+      document.body.innerHTML =
+        '<pre style="padding:16px;color:#b00;white-space:pre-wrap;">' +
+        (err && err.stack ? err.stack : String(err)) +
+        "</pre>";
+      console.error(err);
+    });
+  </script>
+</body>
+</html>

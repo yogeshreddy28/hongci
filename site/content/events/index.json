@@ -1,0 +1,93 @@
+[
+  {
+    "id": "blood-donation-camp-2026-03-08",
+    "title": "Blood Donation Camp",
+    "start_datetime": "2026-03-08T09:00:00+05:30",
+    "end_datetime": "2026-03-08T13:00:00+05:30",
+    "date": "2026-03-08",
+    "location": "hong ci,  ground halll, kormangla",
+    "description": "Community-led blood donation drive with medical screening and volunteer support.",
+    "register_url": "events.html#blood-donation-registration",
+    "category": "COMMUNITY EVENT",
+    "status": "upcoming",
+    "featured": true,
+    "form": {
+      "enabled": true,
+      "title": "Blood Donation Camp Registration#",
+      "submit_label": "Register#",
+      "success_message": "Thanks. We will contact you.#",
+      "fields": [
+        {
+          "id": "name",
+          "type": "text",
+          "label": "Name#",
+          "required": true,
+          "placeholder": "Full name",
+          "options": []
+        },
+        {
+          "id": "age",
+          "type": "number",
+          "label": "Age",
+          "required": true,
+          "placeholder": "",
+          "options": []
+        },
+        {
+          "id": "blood_group",
+          "type": "select",
+          "label": "Blood group",
+          "required": true,
+          "placeholder": "",
+          "options": [
+            "A+\\nA-\\nB+\\nB-\\nO+\\nO-\\nAB+\\nAB-"
+          ]
+        },
+        {
+          "id": "phone",
+          "type": "tel",
+          "label": "#Phone",
+          "required": true,
+          "placeholder": "10-digit mobile number",
+          "options": []
+        },
+        {
+          "id": "slot",
+          "type": "select",
+          "label": "Preferred slot",
+          "required": true,
+          "placeholder": "",
+          "options": [
+            "9:00–10:00\\n10:00–11:00\\n11:00–12:00"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "book-distribution-drive-2026-03-15",
+    "title": "Book Distribution Drive",
+    "start_datetime": "2026-03-15T10:00:00+05:30",
+    "end_datetime": "",
+    "date": "2026-03-15",
+    "location": "City Outreach Center",
+    "description": "Distribution of value-based literature through scheduled community outreach.",
+    "register_url": "books.html",
+    "category": "COMMUNITY EVENT",
+    "status": "upcoming",
+    "featured": false
+  },
+  {
+    "id": "charity-outreach-program-2026-03-22",
+    "title": "Charity Outreach Program",
+    "start_datetime": "2026-03-22T10:30:00+05:30",
+    "end_datetime": "",
+    "date": "2026-03-22",
+    "location": "Local Community Area",
+    "description": "Emergency assistance and support for families in need.",
+    "register_url": "charity.html",
+    "category": "COMMUNITY EVENT",
+    "status": "upcoming",
+    "featured": false
+  }
+]

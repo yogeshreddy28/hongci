@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer | Kuang Ci Tao Community</title>
+  <meta name="description" content="Volunteer roles and registration for community seva activities.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="volunteer">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <circle cx="12" cy="12" r="7"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 3v18"></path>
+            <path d="M3 12h18"></path>
+            <path d="M5.6 5.6l12.8 12.8"></path>
+            <path d="M18.4 5.6L5.6 18.4"></path>
+          </svg>
+        </span>
+        <span>Serve Dharma</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="mission.html">Mission</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="events.html">Events</a>
+        <a href="charity.html">Charity Support</a>
+        <a href="volunteer.html" aria-current="page">Volunteer</a>
+        <a href="books.html">Book Seva</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="notice-board">
+    <section id="cms-mount" data-cms-mount style="display:none"></section>
+    <section id="fallback-content">
+    <section class="section board-section">
+      <div class="container prose-page">
+        <div class="section-head">
+          <p class="section-label" data-bind="hero.label">Community Seva</p>
+          <h1 class="page-title" data-bind="hero.title">Volunteer</h1>
+        </div>
+
+        <svg class="section-seal" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="none" stroke="currentColor" opacity="0.45">
+            <circle cx="100" cy="100" r="60" stroke-width="1.5"></circle>
+            <circle cx="100" cy="100" r="42" stroke-width="1.2"></circle>
+            <circle cx="100" cy="100" r="24" stroke-width="1"></circle>
+            <circle cx="100" cy="100" r="6" stroke-width="1.2"></circle>
+            <path d="M100 24v152M24 100h152M46 46l108 108M154 46L46 154" stroke-width="1"></path>
+          </g>
+        </svg>
+
+        <article class="board-panel prose report-page">
+          <div class="prose-inner">
+            <a class="back-link" href="index.html">Back to Home</a>
+            <p class="report-intro" data-bind="hero.intro">Volunteer service supports the smooth running of camps, community activities, and educational distribution. Please share your skills and availability so we can place you where you can serve best.</p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="volunteer-roles">
+              <h2 id="volunteer-roles">Volunteer Roles</h2>
+              <ul class="role-list" aria-label="Volunteer roles">
+                <li class="role-item">Medical Assistance</li>
+                <li class="role-item">Registration Desk</li>
+                <li class="role-item">Media Coverage</li>
+                <li class="role-item">Logistics</li>
+                <li class="role-item">Book Distribution</li>
+              </ul>
+            </section>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="volunteer-form-title">
+              <h2 id="volunteer-form-title" data-bind="sections.1.title">Volunteer Form</h2>
+              <form id="volunteer-form" class="notice-form" novalidate>
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="volunteer-name" data-bind="sections.1.fields.name.label">Name</label>
+                    <input id="volunteer-name" name="name" type="text" required autocomplete="name" data-bind-attr="sections.1.fields.name.placeholder:placeholder">
+                  </div>
+
+                  <div class="form-field">
+                    <label for="volunteer-whatsapp" data-bind="sections.1.fields.whatsapp.label">WhatsApp</label>
+                    <input id="volunteer-whatsapp" name="whatsapp" type="tel" required placeholder="+91 9XXXXXXXXX" autocomplete="tel" data-bind-attr="sections.1.fields.whatsapp.placeholder:placeholder">
+                  </div>
+
+                  <div class="form-field form-field-full">
+                    <label for="volunteer-skills" data-bind="sections.1.fields.skills.label">Skills</label>
+                    <textarea id="volunteer-skills" name="skills" rows="3" required placeholder="e.g., first aid, registration, photography, driving, coordination" data-bind-attr="sections.1.fields.skills.placeholder:placeholder"></textarea>
+                  </div>
+
+                  <div class="form-field form-field-full">
+                    <label for="volunteer-availability" data-bind="sections.1.fields.availability.label">Availability</label>
+                    <textarea id="volunteer-availability" name="availability" rows="2" required placeholder="Weekends / weekdays / morning / evening / specific dates" data-bind-attr="sections.1.fields.availability.placeholder:placeholder"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary" data-bind="sections.1.actions.primary.label">Submit &amp; Join Group</button>
+                  <a class="btn btn-secondary" href="events.html" data-bind="sections.1.actions.secondary.label" data-bind-href="sections.1.actions.secondary.href">View Upcoming Events</a>
+                </div>
+
+                <p class="form-note" data-bind="sections.1.note">After submit: Auto group invite.</p>
+                <p id="volunteer-status" class="status-message" aria-live="polite"></p>
+              </form>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>May all beings be well.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script src="js/cms/hydratePage.js"></script>
+  <script src="js/cms/hydrateCollections.js"></script>
+  <span hidden id="volunteer-group-link-config" data-bind-attr="sections.1.groupInviteUrl:data-group-link"></span>
+  <script>
+    (function () {
+      "use strict";
+
+      var form = document.getElementById("volunteer-form");
+      var status = document.getElementById("volunteer-status");
+      var groupInviteUrl = "https://chat.whatsapp.com/REPLACE_WITH_GROUP_INVITE_CODE";
+      var cfg = document.getElementById("volunteer-group-link-config");
+      if (cfg) {
+        var hydratedLink = cfg.getAttribute("data-group-link");
+        if (hydratedLink) groupInviteUrl = hydratedLink;
+      }
+
+      if (!form || !status) return;
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        status.textContent = "Form submitted. Opening WhatsApp group invite...";
+
+        try {
+          var opened = window.open(groupInviteUrl, "_blank", "noopener");
+          if (!opened) {
+            status.innerHTML = 'Form submitted. Please open the group invite manually: <a href="' + groupInviteUrl + '" target="_blank" rel="noopener">Join WhatsApp Group</a>';
+          }
+        } catch (error) {
+          status.innerHTML = 'Form submitted. Please open the group invite manually: <a href="' + groupInviteUrl + '" target="_blank" rel="noopener">Join WhatsApp Group</a>';
+        }
+
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>

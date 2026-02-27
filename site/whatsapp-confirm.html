@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation | Kuang Ci Tao Community</title>
+  <meta name="description" content="Blood donation camp registration confirmation and WhatsApp confirmation link.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <circle cx="12" cy="12" r="7"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 3v18"></path>
+            <path d="M3 12h18"></path>
+            <path d="M5.6 5.6l12.8 12.8"></path>
+            <path d="M18.4 5.6L5.6 18.4"></path>
+          </svg>
+        </span>
+        <span>Serve Dharma</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="mission.html">Mission</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="events.html" aria-current="page">Events</a>
+        <a href="charity.html">Charity Support</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="books.html">Book Seva</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="notice-board">
+    <section class="section board-section">
+      <div class="container prose-page">
+        <div class="section-head">
+          <p class="section-label">Blood Donation Registration</p>
+          <h1 class="page-title">Confirmation</h1>
+        </div>
+
+        <svg class="section-seal" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="none" stroke="currentColor" opacity="0.45">
+            <circle cx="100" cy="100" r="60" stroke-width="1.5"></circle>
+            <circle cx="100" cy="100" r="42" stroke-width="1.2"></circle>
+            <circle cx="100" cy="100" r="24" stroke-width="1"></circle>
+            <circle cx="100" cy="100" r="6" stroke-width="1.2"></circle>
+            <path d="M100 24v152M24 100h152M46 46l108 108M154 46L46 154" stroke-width="1"></path>
+          </g>
+        </svg>
+
+        <article class="board-panel prose report-page">
+          <div class="prose-inner">
+            <a class="back-link" href="index.html">Back to Home</a>
+
+            <section class="confirm-panel">
+              <p class="confirm-greeting" id="confirm-greeting">Thank you.</p>
+              <p class="report-intro">Our volunteer team will confirm your slot shortly.</p>
+
+              <dl class="summary-list" id="confirm-summary">
+                <div>
+                  <dt>Selected slot</dt>
+                  <dd id="confirm-slot">—</dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd id="confirm-phone">—</dd>
+                </div>
+                <div>
+                  <dt>Blood group</dt>
+                  <dd id="confirm-blood-group">—</dd>
+                </div>
+                <div>
+                  <dt>Age</dt>
+                  <dd id="confirm-age">—</dd>
+                </div>
+              </dl>
+
+              <div class="form-actions">
+                <a id="wa-confirm-btn" class="btn btn-primary" href="#" target="_blank" rel="noopener">Confirm on WhatsApp</a>
+                <a class="btn btn-secondary" href="events.html#blood-donation-registration">Edit Registration</a>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>May all beings be well.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var ORGANIZER_PHONE = "919876543210";
+      var STORAGE_KEY = "bloodDonationRegistration";
+
+      var greeting = document.getElementById("confirm-greeting");
+      var slotEl = document.getElementById("confirm-slot");
+      var phoneEl = document.getElementById("confirm-phone");
+      var bloodGroupEl = document.getElementById("confirm-blood-group");
+      var ageEl = document.getElementById("confirm-age");
+      var waBtn = document.getElementById("wa-confirm-btn");
+
+      function safeText(value, fallback) {
+        var text = String(value || "").trim();
+        return text || fallback;
+      }
+
+      function getRegistrationData() {
+        try {
+          var raw = sessionStorage.getItem(STORAGE_KEY);
+          if (!raw) return null;
+          return JSON.parse(raw);
+        } catch (error) {
+          return null;
+        }
+      }
+
+      var data = getRegistrationData() || {};
+      var name = safeText(data.name, "Volunteer");
+      var age = safeText(data.age, "—");
+      var bloodGroup = safeText(data.bloodGroup, "—");
+      var phone = safeText(data.phone, "—");
+      var slot = safeText(data.slot, "—");
+
+      greeting.textContent = "Thank you, " + name + ".";
+      slotEl.textContent = slot;
+      phoneEl.textContent = phone;
+      bloodGroupEl.textContent = bloodGroup;
+      ageEl.textContent = age;
+
+      var message = [
+        "I would like to register for the Blood Donation Camp.",
+        "",
+        "Name: " + name,
+        "Age: " + age,
+        "Blood group: " + bloodGroup,
+        "Phone: " + phone,
+        "Preferred slot: " + slot
+      ].join("\n");
+
+      waBtn.href = "https://wa.me/" + ORGANIZER_PHONE + "?text=" + encodeURIComponent(message);
+    })();
+  </script>
+</body>
+</html>

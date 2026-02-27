@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin</title>
+
+    <script>
+      (function () {
+        var host = window.location.hostname;
+        var isLocal = host === "localhost" || host === "127.0.0.1";
+
+        // Force Decap to load ONLY one config file.
+        // Local: config.local.yml (test-repo backend, no login)
+        // Prod:  config.yml (git-gateway backend)
+        var link = document.createElement("link");
+        link.setAttribute("rel", "cms-config-url");
+        link.setAttribute("href", isLocal ? "config.local.yml" : "config.yml");
+        document.head.appendChild(link);
+      })();
+    </script>
+
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </head>
+  <body></body>
+</html>

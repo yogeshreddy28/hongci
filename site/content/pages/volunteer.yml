@@ -1,0 +1,64 @@
+meta:
+  title: Volunteer
+  description: Volunteer roles and seva registration.
+hero:
+  label: Community Seva
+  title: Volunteer
+  subtitle: Offer your time and skills in service.
+  intro: >-
+    Volunteers support camps, registrations, logistics, media, and book distribution. Every role contributes to orderly
+    and compassionate service.
+  image: ""
+  ctas:
+    - label: Upcoming Events
+      href: events.html
+      style: primary
+sections:
+  - id: roles
+    title: Volunteer Roles
+    label: Seva Roles
+    items:
+      - title: Medical Assistance cooking
+        text: Support certified staff and donor flow coordination.
+      - title: Registration Desk
+        text: Help with attendee registration and guidance.
+      - title: Media Coverage
+        text: Document community programs respectfully.
+      - title: Logistics
+        text: Support materials, setup, and coordination.
+      - title: Book Distribution
+        text: Help organize and distribute books during programs.
+  - id: volunteer-form
+    title: Volunteer Form
+    fields:
+      name:
+        label: Name
+        placeholder: ""
+      whatsapp:
+        label: WhatsApp
+        placeholder: +91 9XXXXXXXXX
+      skills:
+        label: Skills
+        placeholder: e.g., first aid, registration, photography, driving, coordination
+      availability:
+        label: Availability
+        placeholder: Weekends / weekdays / morning / evening / specific dates
+    actions:
+      primary:
+        label: Submit & Join Group
+      secondary:
+        label: View Upcoming Events
+        href: events.html
+    note: "After submit: Auto group invite."
+    groupInviteUrl: https://chat.whatsapp.com/REPLACE_WITH_GROUP_INVITE_CODE
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+slug: volunteer
+updatedAt: "2026-02-24T19:36:46.380Z"
+title: volunteer
+blocks: []

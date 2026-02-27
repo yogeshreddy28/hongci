@@ -1,0 +1,80 @@
+meta:
+  title: Mission & Operations
+  description: Mission, goals, fund usage, and operational structure.
+hero:
+  label: Temple Community Operations
+  title: Mission & Operations
+  subtitle: Practical structure for community service and charitable work.
+  intro: >-
+    Our mission is guided by spiritual discipline and executed with practical structure. Every initiative is organized
+    with responsibility, transparency, and measurable goals.
+  image: ""
+  ctas:
+    - label: Back to Home
+      href: index.html
+      style: secondary
+sections:
+  - id: annual-goals
+    title: Annual Goals
+    label: Planning
+    items:
+      - title: Community service events annually
+        text: "12"
+      - title: Cultivation / study sessions per month
+        text: "24"
+      - title: Families supported through charitable assistance
+        text: "50"
+      - title: Books or learning resources distributed
+        text: "500"
+      - title: Blood donation or medical camps
+        text: "6"
+  - id: funds
+    title: How Funds Are Used
+    label: Allocation
+    items:
+      - title: Community Events & Camps
+        text: Venue arrangements, logistics and materials, volunteer coordination.
+      - title: Charitable Assistance
+        text: Family support, emergency aid, essential supplies.
+      - title: Educational & Knowledge Distribution
+        text: Book procurement, printing and distribution, study material development.
+      - title: Operational Support
+        text: Administrative essentials, documentation, and basic infrastructure needs.
+  - id: book-sourcing
+    title: Book Sourcing Method
+    label: Sourcing
+    items:
+      - title: "Books are sourced through:"
+        text: Direct publisher partnerships, Community donations, Bulk educational procurement
+      - title: "Priority is given to:"
+        text: Foundational spiritual texts, Ethical and moral education materials, Youth-oriented learning resources
+    note: All books distributed are selected for value, clarity, and societal benefit.
+  - id: camp-structure
+    title: Camp Organization Structure
+    label: Organization
+    items:
+      - title: Planning Committee
+        text: Date & venue selection, Coordination with partners
+      - title: Volunteer Team
+        text: Registration handling, On-site assistance, Crowd management
+      - title: Resource Management
+        text: Materials preparation, Medical or support coordination, Safety protocols
+      - title: Reporting & Documentation
+        text: Attendance records, Financial logging, Public summary updates
+  - id: transparency-statement
+    title: Transparency Statement
+    label: Transparency
+    items:
+      - title: Statement
+        text: All contributions are used solely for charitable activities. Financial summaries are updated periodically.
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+slug: mission
+updatedAt: "2026-02-24T18:23:46.468Z"
+title: mission
+blocks: []

@@ -1,0 +1,149 @@
+backend:
+  name: test-repo
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+publish_mode: simple
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    files:
+      - file: "content/settings.yml"
+        label: "Site Settings"
+        name: "site_settings"
+        fields:
+          - { label: "Site Title", name: "site_title", widget: "string" }
+          - label: "Donation"
+            name: "donation"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "UPI ID", name: "upi_id", widget: "string", required: false }
+              - { label: "UPI QR", name: "upi_qr", widget: "image", required: false }
+              - { label: "Suggested Amounts", name: "suggested_amounts", widget: "list", required: false }
+              - { label: "Note", name: "note", widget: "string", required: false }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "OG Image", name: "og_image", widget: "image", required: false }
+      - label: "Blocks"
+        name: "blocks"
+        widget: "list"
+        types:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text", required: false }
+              - label: "Primary CTA"
+                name: "primary_cta"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string", required: false }
+                  - { label: "Href", name: "href", widget: "string", required: false }
+              - label: "Secondary CTA"
+                name: "secondary_cta"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string", required: false }
+                  - { label: "Href", name: "href", widget: "string", required: false }
+              - { label: "Background Image", name: "background_image", widget: "image", required: false }
+          - label: "Rich Text"
+            name: "richtext"
+            widget: "object"
+            fields:
+              - { label: "Markdown", name: "markdown", widget: "markdown" }
+          - label: "Quote"
+            name: "quote"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Author", name: "author", widget: "string", required: false }
+              - { label: "Source", name: "source", widget: "string", required: false }
+          - label: "Event List"
+            name: "event_list"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Filter", name: "filter", widget: "select", options: ["featured","upcoming","all"], default: "upcoming" }
+              - { label: "Max Items", name: "max_items", widget: "number", default: 6 }
+          - label: "Book List"
+            name: "book_list"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Max Items", name: "max_items", widget: "number", default: 5 }
+          - label: "Report Table"
+            name: "report_table"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Start Datetime", name: "start_datetime", widget: "datetime" }
+      - { label: "End Datetime", name: "end_datetime", widget: "datetime", required: false }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Description", name: "description_md", widget: "markdown", required: false }
+      - { label: "Register URL", name: "register_url", widget: "string", required: false }
+      - { label: "Status", name: "status", widget: "select", options: ["upcoming","past","cancelled"], default: "upcoming" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+  - name: "books"
+    label: "Books"
+    folder: "content/books"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Bhagavad Gita","Upanishads","Value-based","Life guidance"] }
+      - { label: "Available Count", name: "available_count", widget: "number", default: 0 }
+      - { label: "Cover Image", name: "cover_image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Sponsor Suggested Amount", name: "sponsor_suggested_amount", widget: "number", required: false }
+
+  - name: "reports"
+    label: "Transparency Reports"
+    folder: "content/reports"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Month", name: "month", widget: "string", hint: "YYYY-MM" }
+      - { label: "Donations Received Total", name: "donations_received_total", widget: "number", default: 0 }
+      - { label: "Expenses Used Total", name: "expenses_used_total", widget: "number", default: 0 }
+      - { label: "Blood Units Collected", name: "blood_units_collected", widget: "number", default: 0 }
+      - { label: "Books Distributed", name: "books_distributed", widget: "number", default: 0 }
+      - { label: "Attachments", name: "attachments", widget: "list", required: false }
+      - { label: "Notes", name: "notes_md", widget: "markdown", required: false }

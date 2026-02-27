@@ -1,0 +1,52 @@
+meta:
+  title: Upcoming Events
+  description: Community service activities and programs throughout the year.
+hero:
+  label: Temple Community Calendar
+  title: Upcoming Events
+  subtitle: Service activities, educational gatherings, and charitable initiatives.
+  intro: Our community organizes service activities, educational gatherings, and charitable initiatives throughout the year.
+  image: ""
+  ctas:
+    - label: Register Now
+      href: events.html#blood-donation-registration
+      style: primary
+sections:
+  - id: featured
+    title: Featured Upcoming Event
+    label: Community Seva Event
+    featuredKicker: Community Seva Event
+    ctaLabel: Register Now
+    items: []
+  - id: events
+    title: Event Calendar
+    label: Upcoming service activities and community programs.
+    items:
+      - title: Blood Donation Camp
+        text: Community-led blood donation drive with medical screening and volunteer support.
+        href: events.html#blood-donation-registration
+      - title: Book Distribution Drive
+        text: Distribution of value-based literature through a scheduled community outreach program.
+        href: books.html
+      - title: Charity Outreach Program
+        text: Emergency assistance and essential support coordinated with local volunteers and families.
+        href: charity.html
+  - id: registration
+    title: Blood Donation Registration Form
+    label: Registration
+    items:
+      - title: Register for Blood Donation Camp
+        text: primary
+      - title: Volunteer Instead
+        text: secondary
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html#blood-donation-registration
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+slug: events
+updatedAt: "2026-02-23T19:54:40.481Z"
+title: events
+blocks: []

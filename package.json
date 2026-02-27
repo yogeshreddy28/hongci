@@ -1,0 +1,13 @@
+{
+  "name": "hongci-clean-architecture",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "js-yaml": "^4.1.1",
+    "multer": "^2.0.2"
+  }
+}

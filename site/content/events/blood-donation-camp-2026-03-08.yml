@@ -1,0 +1,48 @@
+id: blood-donation-camp-2026-03-08
+title: Blood Donation Camp
+start_datetime: "2026-03-08T09:00:00+05:30"
+end_datetime: "2026-03-08T13:00:00+05:30"
+location: hong ci,  ground halll, kormangla
+description_md: Community-led blood donation drive with medical screening and volunteer support.
+register_url: events.html#blood-donation-registration
+status: upcoming
+featured: true
+updatedAt: "2026-02-25T03:21:22.710Z"
+form:
+  enabled: true
+  title: Blood Donation Camp Registration#
+  submit_label: Register#
+  success_message: Thanks. We will contact you.#
+  fields:
+    - id: name
+      type: text
+      label: Name#
+      required: true
+      placeholder: Full name
+      options: []
+    - id: age
+      type: number
+      label: Age
+      required: true
+      placeholder: ""
+      options: []
+    - id: blood_group
+      type: select
+      label: Blood group
+      required: true
+      placeholder: ""
+      options:
+        - A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-
+    - id: phone
+      type: tel
+      label: "#Phone"
+      required: true
+      placeholder: 10-digit mobile number
+      options: []
+    - id: slot
+      type: select
+      label: Preferred slot
+      required: true
+      placeholder: ""
+      options:
+        - 9:00–10:00\n10:00–11:00\n11:00–12:00

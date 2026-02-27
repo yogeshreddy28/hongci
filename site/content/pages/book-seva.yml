@@ -1,0 +1,40 @@
+meta:
+  title: Book Seva
+  description: Foundational texts and value-based literature distribution.
+hero:
+  label: Knowledge Distribution Seva
+  title: Book Seva
+  subtitle: Knowledge sustains society.
+  intro: We distribute foundational texts and value-based literature through community programs.
+  image: ""
+  ctas:
+    - label: Request a Book
+      href: books.html#request-book-form
+      style: primary
+    - label: Sponsor Books
+      href: books.html
+      style: secondary
+sections:
+  - id: books
+    title: Available Books
+    label: Current inventory
+    items:
+      - title: Bhagavad Gita
+        text: Foundational guidance on duty, clarity, and selfless action in daily life.
+        href: books.html#request-book-form
+      - title: Upanishads (Selections)
+        text: Selected passages introducing contemplative teachings and inner inquiry.
+        href: books.html#request-book-form
+      - title: Value-Based Literature
+        text: Practical reading on ethics, discipline, family values, and civic conduct.
+        href: books.html#request-book-form
+      - title: Life Guidance Books
+        text: Accessible titles for reflection, emotional steadiness, and wise decision-making.
+        href: books.html#request-book-form
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html

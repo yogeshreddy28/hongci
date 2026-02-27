@@ -1,0 +1,33 @@
+meta:
+  title: Transparency
+  description: Periodic transparency summaries for donations and service outputs.
+hero:
+  label: Accountability & Reporting
+  title: Transparency
+  subtitle: Periodic summaries for accountability and public trust.
+  intro: >-
+    We publish periodic summaries to ensure accountability and maintain public trust. All contributions are used solely
+    for charitable activities.
+  image: ""
+  ctas:
+    - label: Back to Home
+      href: index.html
+      style: secondary
+sections:
+  - id: reports
+    title: Monthly Summary
+    label: Reporting
+    items:
+      - title: Current report period
+        text: See monthly table below for donations, expenses, blood units, and books distributed.
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+slug: transparency
+updatedAt: "2026-02-24T18:27:35.395Z"
+title: transparency
+blocks: []

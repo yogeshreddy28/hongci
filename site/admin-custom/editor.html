@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Editor</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="admin-topbar">
+    <div class="admin-topbar-inner">
+      <div>
+        <p class="admin-kicker">Temple Community Admin</p>
+        <h1 id="editor-title">Editor</h1>
+      </div>
+      <div class="admin-topbar-actions">
+        <a class="admin-btn admin-btn-secondary" href="dashboard.html">Back to Dashboard</a>
+        <button id="logout-btn" class="admin-btn admin-btn-secondary" type="button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <section class="admin-card">
+      <div class="admin-card-head">
+        <h2 id="editor-subtitle">Loading…</h2>
+      </div>
+      <form id="editor-form" class="admin-form" novalidate>
+        <div id="typed-fields"></div>
+
+        <details id="raw-yaml-panel" class="json-editor-wrap">
+          <summary class="admin-btn admin-btn-secondary">Advanced Raw YAML</summary>
+          <div class="raw-panel-body">
+            <label for="json-editor">
+              <span>Raw YAML Editor</span>
+            </label>
+            <textarea id="json-editor" rows="22" spellcheck="false"></textarea>
+            <p class="admin-muted">Power mode. For pages, form fields are preferred; YAML is available for advanced edits.</p>
+          </div>
+        </details>
+
+        <div class="admin-form-actions">
+          <button type="submit" class="admin-btn admin-btn-primary">Save</button>
+        </div>
+        <p id="editor-status" class="admin-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script src="pageSchemas.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

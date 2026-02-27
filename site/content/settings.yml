@@ -1,0 +1,15 @@
+site_title: "KUANG CI TAO COMMUNITY"
+donation:
+  enabled: true
+  upi_id: "yourupi@bank"
+  upi_qr: "assets/uploads/upi-qr-placeholder.png"
+  suggested_amounts:
+    - 101
+    - 501
+    - 1001
+  note: "Donation is voluntary. Books and services are free."
+dynamic_qr_links:
+  volunteer_form_url: "volunteer.html"
+  blood_donation_form_url: "events.html#blood-donation-registration"
+  book_request_form_url: "books.html#request-book-form"
+  donate_url: "charity.html"

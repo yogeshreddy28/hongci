@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "home",
+    "philosophy",
+    "mission",
+    "volunteer",
+    "charity-support",
+    "book-seva",
+    "events",
+    "transparency"
+  ],
+  "events": [
+    "content/events/blood-donation-camp-2026-03-08.yml",
+    "content/events/book-distribution-drive-2026-03-15.yml",
+    "content/events/charity-outreach-program-2026-03-22.yml"
+  ],
+  "books": [
+    "content/books/bhagavad-gita.yml",
+    "content/books/upanishads-selections.yml",
+    "content/books/value-based-literature.yml",
+    "content/books/life-guidance-books.yml"
+  ],
+  "reports": [
+    "content/reports/2026-02.yml"
+  ]
+}

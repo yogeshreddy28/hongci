@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Seva | Kuang Ci Tao Community</title>
+  <meta name="description" content="Book Seva page for requesting free books or sponsoring book distribution through community programs.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="book-seva">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <circle cx="12" cy="12" r="7"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 3v18"></path>
+            <path d="M3 12h18"></path>
+            <path d="M5.6 5.6l12.8 12.8"></path>
+            <path d="M18.4 5.6L5.6 18.4"></path>
+          </svg>
+        </span>
+        <span>Serve Dharma</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="mission.html">Mission</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="events.html">Events</a>
+        <a href="charity.html">Charity Support</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="books.html" aria-current="page">Book Seva</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="notice-board">
+    <section id="cms-mount" data-cms-mount style="display:none"></section>
+    <section id="fallback-content">
+    <section class="section board-section">
+      <div class="container prose-page">
+        <div class="section-head">
+          <p class="section-label" data-bind="hero.label">Knowledge Distribution Seva</p>
+          <h1 class="page-title" data-bind="hero.title">Book Seva</h1>
+        </div>
+
+        <svg class="section-seal" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="none" stroke="currentColor" opacity="0.45">
+            <circle cx="100" cy="100" r="60" stroke-width="1.5"></circle>
+            <circle cx="100" cy="100" r="42" stroke-width="1.2"></circle>
+            <circle cx="100" cy="100" r="24" stroke-width="1"></circle>
+            <circle cx="100" cy="100" r="6" stroke-width="1.2"></circle>
+            <path d="M100 24v152M24 100h152M46 46l108 108M154 46L46 154" stroke-width="1"></path>
+          </g>
+        </svg>
+
+        <article class="board-panel prose report-page">
+          <div class="prose-inner">
+            <a class="back-link" href="index.html">Back to Home</a>
+            <p class="report-intro" data-bind="hero.intro">Knowledge sustains society. We distribute foundational texts and value-based literature through community programs.</p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="available-books">
+              <h2 id="available-books">Available Books</h2>
+              <div class="book-grid" aria-label="Available books" data-repeat="collections.books">
+                <article class="book-card">
+                  <div class="book-card-head">
+                    <h3>Bhagavad Gita</h3>
+                    <span class="badge">Limited</span>
+                  </div>
+                  <p class="board-copy">Foundational guidance on duty, clarity, and selfless action in daily life.</p>
+                  <a class="inline-link" href="#request-book-form">Request</a>
+                </article>
+
+                <article class="book-card">
+                  <div class="book-card-head">
+                    <h3>Upanishads (Selections)</h3>
+                    <span class="badge">Limited</span>
+                  </div>
+                  <p class="board-copy">Selected passages introducing contemplative teachings and inner inquiry.</p>
+                  <a class="inline-link" href="#request-book-form">Request</a>
+                </article>
+
+                <article class="book-card">
+                  <div class="book-card-head">
+                    <h3>Value-Based Literature</h3>
+                    <span class="badge">Limited</span>
+                  </div>
+                  <p class="board-copy">Practical reading on ethics, discipline, family values, and civic conduct.</p>
+                  <a class="inline-link" href="#request-book-form">Request</a>
+                </article>
+
+                <article class="book-card">
+                  <div class="book-card-head">
+                    <h3>Life Guidance Books</h3>
+                    <span class="badge">Limited</span>
+                  </div>
+                  <p class="board-copy">Accessible titles for reflection, emotional steadiness, and wise decision-making.</p>
+                  <a class="inline-link" href="#request-book-form">Request</a>
+                </article>
+                <template>
+                  <article class="book-card">
+                    <div class="book-card-layout">
+                      <div class="book-card-media">
+                        <img data-bind-src="coverImage" data-bind-attr="coverAlt:alt" alt="Book cover">
+                      </div>
+                      <div class="book-card-body">
+                        <div class="book-card-head">
+                          <h3 data-bind="title">Book Title</h3>
+                          <span class="badge" data-bind="badge">Limited</span>
+                        </div>
+                        <p class="board-copy" data-bind="description">Description</p>
+                        <div class="book-card-meta">
+                          <p class="note-line" data-bind="availableText"></p>
+                          <p class="note-line" data-bind="sponsorText"></p>
+                        </div>
+                        <div class="book-card-actions">
+                          <a class="btn btn-secondary" data-bind-href="href" href="#request-book-form" data-bind="requestLabel">Request</a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </template>
+              </div>
+            </section>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="how-it-works">
+              <h2 id="how-it-works">How It Works</h2>
+
+              <div class="split-panels">
+                <section class="info-box" id="request-book-form" aria-labelledby="option-request">
+                  <h3 id="option-request">Option 1: Request a Free Book</h3>
+                  <p class="board-copy">Request one book. We confirm availability and distribute during camps or community programs.</p>
+                  <form id="book-request-form" class="notice-form" novalidate>
+                    <div class="form-grid">
+                      <div class="form-field">
+                        <label for="request-name">Name</label>
+                        <input id="request-name" name="name" type="text" required minlength="2" autocomplete="name">
+                      </div>
+
+                      <div class="form-field">
+                        <label for="request-phone">Phone</label>
+                        <input id="request-phone" name="phone" type="tel" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number">
+                      </div>
+
+                      <div class="form-field form-field-full">
+                        <label for="request-book">Select Book</label>
+                        <select id="request-book" name="book" required>
+                          <option value="">Select a book</option>
+                          <option>Bhagavad Gita</option>
+                          <option>Upanishads (Selections)</option>
+                          <option>Value-Based Literature</option>
+                          <option>Life Guidance Books</option>
+                        </select>
+                      </div>
+
+                      <div class="form-field">
+                        <label for="request-area">Location / Area (optional)</label>
+                        <input id="request-area" name="area" type="text" autocomplete="address-level2">
+                      </div>
+
+                      <div class="form-field">
+                        <label for="request-notes">Notes (optional)</label>
+                        <input id="request-notes" name="notes" type="text" placeholder="Language / preference / pickup note">
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-primary">Request via WhatsApp</button>
+                    </div>
+                    <p id="request-status" class="status-message" aria-live="polite"></p>
+                  </form>
+                </section>
+
+                <section class="info-box" aria-labelledby="option-sponsor">
+                  <h3 id="option-sponsor">Option 2: Sponsor Books for Others</h3>
+                  <p class="board-copy">You may sponsor books for distribution. This is voluntary and offered as seva.</p>
+                  <p class="note-line">Example: Sponsor 10 books for distribution.</p>
+                  <p class="note-line">Donation is optional but suggested.</p>
+
+                  <form id="book-sponsor-form" class="notice-form" novalidate>
+                    <div class="form-grid">
+                      <div class="form-field">
+                        <label for="sponsor-name">Name</label>
+                        <input id="sponsor-name" name="name" type="text" required minlength="2" autocomplete="name">
+                      </div>
+
+                      <div class="form-field">
+                        <label for="sponsor-phone">Phone</label>
+                        <input id="sponsor-phone" name="phone" type="tel" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number">
+                      </div>
+
+                      <div class="form-field form-field-full">
+                        <label for="sponsor-count">Sponsor count</label>
+                        <select id="sponsor-count" name="count" required>
+                          <option value="">Select count</option>
+                          <option>5</option>
+                          <option>10</option>
+                          <option>25</option>
+                          <option>50</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-primary">Sponsor via WhatsApp</button>
+                    </div>
+                    <p id="sponsor-status" class="status-message" aria-live="polite"></p>
+                  </form>
+                </section>
+              </div>
+
+              <section class="copy-box is-hidden" id="wa-fallback-box" aria-labelledby="wa-fallback-title">
+                <h3 id="wa-fallback-title">WhatsApp Message (Copy)</h3>
+                <p class="board-copy">If WhatsApp does not open on this device, copy and send this message manually.</p>
+                <textarea id="wa-fallback-text" readonly rows="7"></textarea>
+              </section>
+            </section>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="distribution-model">
+              <h2 id="distribution-model">Distribution Model</h2>
+              <p class="board-copy">Books are distributed during camps or community programs. This ensures orderly distribution, proper recording, and respectful delivery.</p>
+              <div class="note-box">
+                <p>Books are free. Seva is voluntary.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>May all beings be well.</p>
+      <p class="footer-linkline"><a class="back-link" href="index.html">Back to Home</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script src="js/cms/hydratePage.js"></script>
+  <script src="js/cms/hydrateCollections.js"></script>
+  <script>
+    (function () {
+      "use strict";
+
+      const ORGANIZER_WA = "91XXXXXXXXXX";
+
+      var requestForm = document.getElementById("book-request-form");
+      var sponsorForm = document.getElementById("book-sponsor-form");
+      var requestStatus = document.getElementById("request-status");
+      var sponsorStatus = document.getElementById("sponsor-status");
+      var fallbackBox = document.getElementById("wa-fallback-box");
+      var fallbackText = document.getElementById("wa-fallback-text");
+
+      function digitsOnly(value) {
+        return String(value || "").replace(/\D/g, "");
+      }
+
+      function openWhatsApp(message, statusEl) {
+        var url = "https://wa.me/" + ORGANIZER_WA + "?text=" + encodeURIComponent(message);
+        if (statusEl) statusEl.textContent = "Opening WhatsApp...";
+
+        var opened = null;
+        try {
+          opened = window.open(url, "_blank", "noopener");
+        } catch (error) {
+          opened = null;
+        }
+
+        if (!opened) {
+          fallbackText.value = message;
+          fallbackBox.classList.remove("is-hidden");
+          fallbackBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          if (statusEl) {
+            statusEl.innerHTML = 'WhatsApp could not be opened automatically. Use the message box below or open <a href="' + url + '" target="_blank" rel="noopener">WhatsApp</a>.';
+          }
+          return;
+        }
+
+        if (statusEl) statusEl.textContent = "WhatsApp opened. Please send the prefilled message to confirm.";
+      }
+
+      function validateName(value) {
+        return String(value || "").trim().length >= 2;
+      }
+
+      function validatePhone(value) {
+        return /^\d{10}$/.test(digitsOnly(value));
+      }
+
+      requestForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var formData = new FormData(requestForm);
+        var name = String(formData.get("name") || "").trim();
+        var phone = digitsOnly(formData.get("phone"));
+        var book = String(formData.get("book") || "").trim();
+        var area = String(formData.get("area") || "").trim();
+        var notes = String(formData.get("notes") || "").trim();
+
+        if (!validateName(name)) {
+          requestStatus.textContent = "Please enter a valid name.";
+          document.getElementById("request-name").focus();
+          return;
+        }
+        if (!validatePhone(phone)) {
+          requestStatus.textContent = "Please enter a valid 10-digit phone number.";
+          document.getElementById("request-phone").focus();
+          return;
+        }
+        if (!book) {
+          requestStatus.textContent = "Please select a book.";
+          document.getElementById("request-book").focus();
+          return;
+        }
+
+        var lines = [
+          "Book Seva Request",
+          "",
+          "Name: " + name,
+          "Phone: " + phone,
+          "Requested Book: " + book
+        ];
+        if (area) lines.push("Location / Area: " + area);
+        if (notes) lines.push("Notes: " + notes);
+        lines.push("", "I would like to request a free book.");
+
+        openWhatsApp(lines.join("\n"), requestStatus);
+      });
+
+      sponsorForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var formData = new FormData(sponsorForm);
+        var name = String(formData.get("name") || "").trim();
+        var phone = digitsOnly(formData.get("phone"));
+        var count = String(formData.get("count") || "").trim();
+
+        if (!validateName(name)) {
+          sponsorStatus.textContent = "Please enter a valid name.";
+          document.getElementById("sponsor-name").focus();
+          return;
+        }
+        if (!validatePhone(phone)) {
+          sponsorStatus.textContent = "Please enter a valid 10-digit phone number.";
+          document.getElementById("sponsor-phone").focus();
+          return;
+        }
+        if (!count) {
+          sponsorStatus.textContent = "Please select a sponsor count.";
+          document.getElementById("sponsor-count").focus();
+          return;
+        }
+
+        var message = [
+          "Book Seva Sponsorship",
+          "",
+          "Name: " + name,
+          "Phone: " + phone,
+          "Sponsor Count: " + count,
+          "",
+          "I would like to sponsor books for distribution."
+        ].join("\n");
+
+        openWhatsApp(message, sponsorStatus);
+      });
+    })();
+  </script>
+</body>
+</html>

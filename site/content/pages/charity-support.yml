@@ -1,0 +1,69 @@
+meta:
+  title: Charity Support
+  description: Donation methods and usage for community service and relief.
+hero:
+  label: Community Service Support
+  title: Charity Support
+  subtitle: Clear, responsible, and dignified support for charitable work.
+  intro: >-
+    Your support sustains community service and compassionate relief. Donations are used responsibly for charitable
+    activities.
+  image: ""
+  ctas:
+    - label: Back to Home
+      href: index.html
+      style: secondary
+sections:
+  - id: donation-use
+    title: Where Donations Are Used
+    label: Allocation
+    items:
+      - title: Medical support
+        text: Patient and family relief support.
+      - title: Blood camp logistics
+        text: Venue, materials, and volunteer coordination.
+      - title: Books printing & distribution
+        text: Seva literature and learning resources.
+      - title: Emergency help
+        text: Urgent community assistance as needed.
+    note: Allocation may vary depending on urgency and community needs.
+  - id: donation-methods
+    title: Donation Methods
+    label: Donate
+    upi:
+      title: UPI (QR)
+      qrImage: ""
+      qrPlaceholderHtml: ""
+      scanText: Scan to donate via UPI
+      upiLabel: "UPI ID:"
+      upiId: yourupi@bank
+      helperText: Any UPI app works.
+    bank:
+      title: Bank Transfer
+      fields:
+        - label: Account Name
+          value: __________
+        - label: Bank
+          value: __________
+        - label: Account Number
+          value: __________
+        - label: IFSC
+          value: __________
+        - label: Branch
+          value: __________
+  - id: integrity-note
+    title: Integrity Note
+    items:
+      - title: Statement
+        text: Donation is voluntary. Books and services are free.
+brand:
+  sealImage: assets/img/seal-watermark.png
+  watermarkOpacity: 0.06
+links:
+  registerDefault: events.html
+  volunteerDefault: volunteer.html
+  donateDefault: charity.html
+slug: charity-support
+updatedAt: "2026-02-24T19:25:40.087Z"
+title: charity-support
+blocks: []

@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://127.0.0.1:8080",
+  "pages": [
+    { "slug": "home", "title": "Home", "file": "index.html", "enabled": true },
+    { "slug": "philosophy", "title": "Philosophy", "file": "philosophy.html", "enabled": true },
+    { "slug": "mission", "title": "Mission & Operations", "file": "mission.html", "enabled": true },
+    { "slug": "events", "title": "Upcoming Events", "file": "events.html", "enabled": true },
+    { "slug": "charity-support", "title": "Charity Support", "file": "charity.html", "enabled": true },
+    { "slug": "volunteer", "title": "Volunteer", "file": "volunteer.html", "enabled": true },
+    { "slug": "book-seva", "title": "Book Seva", "file": "books.html", "enabled": true },
+    { "slug": "transparency", "title": "Transparency", "file": "transparency.html", "enabled": true }
+  ]
+}

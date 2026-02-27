@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "items": [
+    {
+      "month": "2026-02",
+      "donations_received_total": 0,
+      "expenses_used_total": 0,
+      "blood_units_collected": 0,
+      "books_distributed": 0,
+      "notes_md": "Initial month — reporting started.",
+      "attachments": []
+    }
+  ],
+  "lastUpdated": "2026-02-24T17:28:33.011Z"
+}

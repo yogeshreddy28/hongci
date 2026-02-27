@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events | Kuang Ci Tao Community</title>
+  <meta name="description" content="Upcoming temple and community events, including service activities, educational gatherings, and blood donation camp registration.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="events">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <circle cx="12" cy="12" r="7"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 3v18"></path>
+            <path d="M3 12h18"></path>
+            <path d="M5.6 5.6l12.8 12.8"></path>
+            <path d="M18.4 5.6L5.6 18.4"></path>
+          </svg>
+        </span>
+        <span>Serve Dharma</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="mission.html">Mission</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="events.html" aria-current="page">Events</a>
+        <a href="charity.html">Charity Support</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="books.html">Book Seva</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="notice-board">
+    <section id="cms-mount" data-cms-mount style="display:none"></section>
+    <section id="fallback-content">
+    <section class="section board-section">
+      <div class="container prose-page">
+        <div class="section-head">
+          <p class="section-label" data-bind="hero.label">Temple Community Calendar</p>
+          <h1 class="page-title" data-bind="hero.title">Upcoming Events</h1>
+        </div>
+
+        <svg class="section-seal" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="none" stroke="currentColor" opacity="0.45">
+            <circle cx="100" cy="100" r="60" stroke-width="1.5"></circle>
+            <circle cx="100" cy="100" r="42" stroke-width="1.2"></circle>
+            <circle cx="100" cy="100" r="24" stroke-width="1"></circle>
+            <circle cx="100" cy="100" r="6" stroke-width="1.2"></circle>
+            <path d="M100 24v152M24 100h152M46 46l108 108M154 46L46 154" stroke-width="1"></path>
+          </g>
+        </svg>
+
+        <article class="board-panel prose report-page">
+          <div class="prose-inner">
+            <a class="back-link" href="index.html">Back to Home</a>
+            <p class="report-intro" data-bind="hero.intro">Our community organizes service activities, educational gatherings, and charitable initiatives throughout the year.</p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="featured-event-title">
+              <h2 id="featured-event-title" data-bind="sections.featured.title">Featured Upcoming Event</h2>
+              <article class="featured-event">
+                <p class="panel-kicker" data-bind="sections.featured.featuredKicker">Community Seva Event</p>
+                <h3 class="featured-event-title">Blood Donation Camp</h3>
+                <p class="featured-meta"><strong>Date:</strong> Sunday, 8 March 2026</p>
+                <p class="featured-meta"><strong>Location:</strong> Main Community Hall, Hyderabad</p>
+                <p class="board-copy">A community-led blood donation camp organized with medical partners and volunteer support. Donors will be guided through registration, screening, and post-donation care.</p>
+
+                <div class="countdown-wrap editorial-countdown">
+                  <div class="countdown" data-countdown>
+                    <div class="time-box">
+                      <span class="time-value" data-time="days">00</span>
+                      <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-box">
+                      <span class="time-value" data-time="hours">00</span>
+                      <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-box">
+                      <span class="time-value" data-time="minutes">00</span>
+                      <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-box">
+                      <span class="time-value" data-time="seconds">00</span>
+                      <span class="time-label">Seconds</span>
+                    </div>
+                  </div>
+                  <p class="event-status" data-event-status aria-live="polite"></p>
+                </div>
+
+                <div class="form-actions">
+                  <a class="btn btn-primary" data-bind="sections.featured.ctaLabel" href="#event-registration">Register Now</a>
+                </div>
+              </article>
+            </section>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" aria-labelledby="event-calendar-title">
+              <h2 id="event-calendar-title" data-bind="sections.events.title">Event Calendar</h2>
+              <p class="note-line calendar-intro" data-bind="sections.events.label">Upcoming service activities and community programs.</p>
+
+              <div id="event-calendar-list" class="event-calendar-list" aria-label="Upcoming event calendar" data-repeat="collections.events">
+                <article class="event-item">
+                  <div class="event-date">
+                    <span class="event-date-month">Mar</span>
+                    <span class="event-date-day">08</span>
+                    <span class="event-date-year">2026</span>
+                  </div>
+                  <div class="event-details">
+                    <p class="panel-kicker">Upcoming Camps</p>
+                    <h3>Blood Donation Camp</h3>
+                    <p class="event-meta-line">Community Hall, Hyderabad</p>
+                    <p class="event-description">Community-led blood donation drive with medical screening and volunteer support.</p>
+                  </div>
+                  <div class="event-action">
+                    <a class="btn btn-secondary" href="#event-registration">Register</a>
+                  </div>
+                </article>
+
+                <article class="event-item">
+                  <div class="event-date">
+                    <span class="event-date-month">Mar</span>
+                    <span class="event-date-day">15</span>
+                    <span class="event-date-year">2026</span>
+                  </div>
+                  <div class="event-details">
+                    <p class="panel-kicker">Book Distribution Drives</p>
+                    <h3>Book Distribution Drive</h3>
+                    <p class="event-meta-line">City Outreach Center</p>
+                    <p class="event-description">Distribution of value-based literature through a scheduled community outreach program.</p>
+                  </div>
+                  <div class="event-action">
+                    <a class="btn btn-secondary" href="books.html">Register</a>
+                  </div>
+                </article>
+
+                <article class="event-item">
+                  <div class="event-date">
+                    <span class="event-date-month">Mar</span>
+                    <span class="event-date-day">22</span>
+                    <span class="event-date-year">2026</span>
+                  </div>
+                  <div class="event-details">
+                    <p class="panel-kicker">Charity Outreach Programs</p>
+                    <h3>Charity Outreach Program</h3>
+                    <p class="event-meta-line">Local Community Area</p>
+                    <p class="event-description">Emergency assistance and essential support coordinated with local volunteers and families.</p>
+                  </div>
+                  <div class="event-action">
+                    <a class="btn btn-secondary" href="charity.html">Register</a>
+                  </div>
+                </article>
+                <template>
+                  <article class="event-item">
+                    <div class="event-date">
+                      <span class="event-date-month" data-bind="dateMonth">Mar</span>
+                      <span class="event-date-day" data-bind="dateDay">08</span>
+                      <span class="event-date-year" data-bind="dateYear">2026</span>
+                    </div>
+                    <div class="event-details">
+                      <p class="panel-kicker" data-bind="typeLabel">Community Event</p>
+                      <h3 data-bind="title">Event Title</h3>
+                      <p class="event-meta-line" data-bind="location">Location</p>
+                      <p class="event-description" data-bind="description">Description</p>
+                    </div>
+                    <div class="event-action">
+                      <a class="btn btn-secondary" data-bind-href="href" href="events.html">Register</a>
+                    </div>
+                  </article>
+                </template>
+              </div>
+            </section>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="report-section" id="event-registration" aria-labelledby="event-registration-title" data-event-form-section>
+              <h2 id="event-registration-title" data-bind="sections.registration.title">Event Registration</h2>
+              <div id="event-registration-meta" class="board-copy"></div>
+              <div id="event-registration-form"></div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>May all beings be well.</p>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script src="js/cms/hydratePage.js"></script>
+  <script src="js/cms/hydrateCollections.js"></script>
+  <script src="js/cms/formRenderer.js"></script>
+  <script src="js/cms/eventsMount.js"></script>
+  <script>
+    (function () {
+      "use strict";
+
+      var nextEvent = (window.SITE_DATA && window.SITE_DATA.nextEvent) || {};
+      var countdownEl = document.querySelector("[data-countdown]");
+      var statusEl = document.querySelector("[data-event-status]");
+
+      function pad(value) {
+        return String(value).padStart(2, "0");
+      }
+
+      function setCountdownValues(parts) {
+        Object.keys(parts).forEach(function (name) {
+          var el = document.querySelector('[data-time="' + name + '"]');
+          if (el) el.textContent = pad(parts[name]);
+        });
+      }
+
+      function setupCountdown() {
+        if (!countdownEl) return;
+
+        var eventDate = new Date(nextEvent.startsAt || "2026-03-08T09:00:00+05:30");
+        if (Number.isNaN(eventDate.getTime())) {
+          setCountdownValues({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+          if (statusEl) statusEl.textContent = "Event date will be announced soon.";
+          return;
+        }
+
+        function render() {
+          var distance = eventDate.getTime() - Date.now();
+          if (distance <= 0) {
+            setCountdownValues({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+            if (statusEl) statusEl.textContent = "Event completed / stay tuned";
+            countdownEl.classList.add("is-ended");
+            return false;
+          }
+
+          var totalSeconds = Math.floor(distance / 1000);
+          var days = Math.floor(totalSeconds / 86400);
+          var hours = Math.floor((totalSeconds % 86400) / 3600);
+          var minutes = Math.floor((totalSeconds % 3600) / 60);
+          var seconds = totalSeconds % 60;
+
+          setCountdownValues({ days: days, hours: hours, minutes: minutes, seconds: seconds });
+          if (statusEl) statusEl.textContent = "Registration open";
+          countdownEl.classList.remove("is-ended");
+          return true;
+        }
+
+        var active = render();
+        if (!active) return;
+        var timer = window.setInterval(function () {
+          if (!render()) window.clearInterval(timer);
+        }, 1000);
+      }
+
+      setupCountdown();
+    })();
+  </script>
+</body>
+</html>
